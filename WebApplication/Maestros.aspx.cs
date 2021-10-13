@@ -8,18 +8,18 @@ using BusinessManagement.service;
 
 namespace WebApplication
 {
-    public partial class Cursos : System.Web.UI.Page
+    public partial class Maestros : System.Web.UI.Page
     {
-        public Curso cursoService = new Curso();
+        public Maestro maestroService = new Maestro();
         public String message = "Iniciado...";
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void saveCourse_Click(object sender, EventArgs e)
+        protected void saveTeacher_Click(object sender, EventArgs e)
         {
-            this.message = this.cursoService.addNewCurso(txtId.Text, txtN.Text, txtD.Text);
+            this.message = this.maestroService.addNewMaestro(txtId.Text, txtPn.Text, txtSn.Text, txtPa.Text, txtSa.Text, txtF.Text);
         }
     }
 }

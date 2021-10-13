@@ -1,16 +1,28 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cursos.aspx.cs" Inherits="WebApplication.Cursos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Cursos.aspx.cs" Inherits="WebApplication.Cursos" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+    <div class="jumbotron">
+        <h2>Gestion de Cursos</h2>
+
         <div>
-            AQUI VAN CURSOS
+            <p class="lead">Codigo:</p>
+            <asp:TextBox class="lead" ID="txtId" runat="server"></asp:TextBox>
         </div>
-    </form>
-</body>
-</html>
+        <div>
+            <p class="lead">Nombre:</p>
+            <asp:TextBox class="lead" ID="txtN" runat="server"></asp:TextBox>
+        </div>
+        <div>
+            <p class="lead">Descripcion:</p>
+            <asp:TextBox class="lead" ID="txtD" runat="server"></asp:TextBox>
+        </div>
+        <div>
+            <asp:Button ID="saveStudent" class="btn btn-primary btn-lg" runat="server" Text="Guardar" OnClick="saveCourse_Click" />
+        </div>
+        <div>
+            <p><%= this.message %></p>
+        </div>
+    </div>
+
+</asp:Content>

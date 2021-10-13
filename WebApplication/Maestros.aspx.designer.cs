@@ -11,7 +11,7 @@ namespace WebApplication
 {
 
 
-    public partial class Cursos
+    public partial class Maestros
     {
 
         /// <summary>
@@ -24,30 +24,57 @@ namespace WebApplication
         protected global::System.Web.UI.WebControls.TextBox txtId;
 
         /// <summary>
-        /// txtN control.
+        /// txtPn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtN;
+        protected global::System.Web.UI.WebControls.TextBox txtPn;
 
         /// <summary>
-        /// txtD control.
+        /// txtSn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtD;
+        protected global::System.Web.UI.WebControls.TextBox txtSn;
 
         /// <summary>
-        /// saveStudent control.
+        /// txtPa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button saveStudent;
+        protected global::System.Web.UI.WebControls.TextBox txtPa;
+
+        /// <summary>
+        /// txtSa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSa;
+
+        /// <summary>
+        /// txtF control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtF;
+
+        /// <summary>
+        /// saveMaestro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button saveMaestro;
     }
 }
